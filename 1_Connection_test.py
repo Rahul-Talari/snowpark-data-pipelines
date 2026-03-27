@@ -3,13 +3,13 @@ import snowflake.snowpark.functions
 from snowflake.snowpark import Session
 from snowflake.snowpark.functions import col
 
-connection_parameters = {"account":"ijvunnh-ny22848",
-"user":"pradeep",
-"password": "AbcdAbcdAbcd067$",
+connection_parameters = {"account":"AQKUTJW-GN70912",
+"user": "RAHULTALARI",
+"password": "Lenovothinkpad@1",
 "role":"ACCOUNTADMIN",
-"warehouse":"COMPUTE_WH",
-"database":"DEMO_DB",
-"schema":"PUBLIC"
+"warehouse":"SNOWPARK_WH",
+"database":"SNOWPARK_DB",
+"schema":"SNOWPARK_SCHEMA"
 }
 
 test_session = Session.builder.configs(connection_parameters).create()

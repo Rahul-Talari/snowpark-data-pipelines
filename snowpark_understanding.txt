@@ -1,0 +1,32 @@
+## What is Snowpark?
+
+Snowpark is a developer framework by Snowflake that allows you to write data transformation and processing logic using **Python, Java, or Scala** — directly inside Snowflake — without moving data out.
+
+---
+
+### 🔑 Key Idea
+> Instead of pulling data out of Snowflake to process it, **Snowpark pushes your code into Snowflake** and runs it there.
+
+---
+
+### ✅ What It Is Used For
+
+| Use Case | Description |
+|---|---|
+| **Data Transformation** | Transform large datasets using Python/Pandas-like DataFrames |
+| **ETL/ELT Pipelines** | Build data pipelines entirely inside Snowflake |
+| **Machine Learning** | Train & deploy ML models directly in Snowflake |
+| **Data Engineering** | Replace complex SQL with Python code |
+| **UDFs & Stored Procedures** | Write Python functions that run inside Snowflake |
+
+---
+
+### 📌 Key Characteristics
+
+- The Snowpark library provides an intuitive API for querying and processing data in a data pipeline. Using this library, you can build applications that process data in Snowflake **without moving data** to the system where your application code runs.
+
+- Snowpark operations are executed **lazily on the server**, which reduces the amount of data transferred between your client and the Snowflake database.
+
+- Snowpark does **not require a separate cluster** outside of Snowflake for computations. All of the computations are done **within Snowflake**.
+
+- The core abstraction in Snowpark is the **DataFrame**, which represents a set of data and provides methods to operate on that data.

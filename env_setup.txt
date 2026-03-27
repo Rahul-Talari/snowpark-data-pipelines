@@ -1,19 +1,51 @@
-# Create virtual environment with Python 3.12
+# ============================================
+# PYTHON + SNOWPARK SETUP GUIDE (Windows)
+# ============================================
+
+# STEP 1: Install Python 3.12
+# Download from: https://www.python.org/downloads/release/python-3120/
+# ✅ Check "Add Python to PATH" during installation
+
+# ============================================
+# STEP 2: Install Python Extension Pack in VS Code
+# ============================================
+# Open VS Code
+# Press Ctrl+Shift+X to open Extensions
+# Search "Python Extension Pack" (by Don Jayamanne)
+# Click Install
+#
+# Includes:
+#   - Python      → venv detection, debugging, linting
+#   - Pylance     → auto-complete & type checking
+#   - Jupyter     → run code cell by cell
+#   - IntelliCode → AI code suggestions
+#   - Python Indent   → auto indentation
+#   - autoDocstring   → auto-generate docstrings
+
+# ============================================
+# STEP 3: Create virtual environment with Python 3.12
+# ============================================
 python3.12 -m venv .venv
 
-# Activate the environment
+# STEP 4: Activate the environment
 .venv\Scripts\activate
 
-# Upgrade pip
+# STEP 5: Upgrade pip
 python -m pip install --upgrade pip
 
-# Install all packages
+# STEP 6: Install all packages
 pip install numpy pandas pyarrow snowflake-snowpark-python
 
-# Verify installations
+# STEP 7: Select Interpreter in VS Code
+# Press Ctrl+Shift+P → "Python: Select Interpreter" → choose .venv
+
+# ============================================
+# STEP 8: Verify installations
+# ============================================
 python --version
 pip show snowflake-snowpark-python
 pip show numpy pandas pyarrow
 
 # Deactivate when done
 deactivate
+

@@ -5,13 +5,13 @@ import time
 from snowflake.snowpark.types import IntegerType, StringType, StructField, StructType, DateType
 
 # Replace the below connection_parameters with your respective snowflake account,user name and password
-connection_parameters = {"account":"ijvunnh-ny22848",
-"user":"pradeep",
-"password": "AbcdAbcdAbcd067$",
+connection_parameters = {"account":"AQKUTJW-GN70912",
+"user": "RAHULTALARI",
+"password": "Lenovothinkpad@1",
 "role":"ACCOUNTADMIN",
-"warehouse":"COMPUTE_WH",
-"database":"DEMO_DB",
-"schema":"PUBLIC"
+"warehouse":"SNOWPARK_WH",
+"database":"SNOWFLAKE_SAMPLE_DATA",
+"schema":"TPCH_SF1"
 }
 
 session = Session.builder.configs(connection_parameters).create()
