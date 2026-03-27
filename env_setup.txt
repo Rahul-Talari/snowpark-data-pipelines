@@ -1,0 +1,19 @@
+# Create virtual environment with Python 3.12
+python3.12 -m venv .venv
+
+# Activate the environment
+.venv\Scripts\activate
+
+# Upgrade pip
+python -m pip install --upgrade pip
+
+# Install all packages
+pip install numpy pandas pyarrow snowflake-snowpark-python
+
+# Verify installations
+python --version
+pip show snowflake-snowpark-python
+pip show numpy pandas pyarrow
+
+# Deactivate when done
+deactivate
